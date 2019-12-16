@@ -46,7 +46,7 @@ type EIPInfo struct {
 	// 备注
 	Remark string
 
-	// 状态
+	// 状态。Allocating：申请中,Free：未绑定,Bounding：绑定中,Bound：已绑定,Unbounding：解绑中,Deleted：已删除,Releasing：销毁中,Released：已销毁,BandwidthChanging：带宽修改中
 	Status string
 
 	// 可用区

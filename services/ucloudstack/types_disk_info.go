@@ -22,7 +22,7 @@ type DiskInfo struct {
 	// 硬盘ID
 	DiskID string
 
-	// 硬盘状态
+	// 硬盘状态。Creating：创建中,BeingCloned：正在被克隆中,Unbound：已解绑,Unbounding：解绑中,Bounding：绑定中,Bound：已绑定,Upgrading：升级中,Deleting：删除中,Deleted：已删除,Releasing：销毁中,Released：已销毁
 	DiskStatus string
 
 	// 过期时间。时间戳

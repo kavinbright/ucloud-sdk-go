@@ -11,10 +11,10 @@ import (
 type AttachDiskRequest struct {
 	request.CommonBase
 
-	// [公共参数] 地域
+	// [公共参数] 地域。枚举值：cn,表示中国；
 	// Region *string `required:"true"`
 
-	// [公共参数] 可用区
+	// [公共参数] 可用区。枚举值：zone-01，表示中国；
 	// Zone *string `required:"true"`
 
 	// 硬盘ID

@@ -20,7 +20,7 @@ type CreateVMInstanceRequest struct {
 	// 系统盘类型。枚举值：Normal，表示普通；SSD，表示SSD；
 	BootDiskSetType *string `required:"true"`
 
-	// CPU 个数，目前只能输入数据库配置指定规格参数，如：1核2048M、2核4096M、4核8192M、8核16384M、16核32768M。
+	// CPU个数，如1，2，4，8，16，32，64等。
 	CPU *int `required:"true"`
 
 	// 计费模式。枚举值：Dynamic，表示小时；Month，表示月；Year，表示年；
@@ -44,7 +44,7 @@ type CreateVMInstanceRequest struct {
 	// 内网安全组 ID。输入“有效”状态的安全组的ID。
 	LANSGID *string `required:"false"`
 
-	// 内存大小，单位 M。目前只能输入数据库配置指定规格参数，如：1核2048M、2核4096M、4核8192M、8核16384M、16核32768M。
+	// 内存容量，如1024，2048，4096，8192，16384，32768，65535等。
 	Memory *int `required:"true"`
 
 	// 虚拟机名称。可输入如：myVM。名称只能包含中英文、数字以及- _ .且1-30个字符。
